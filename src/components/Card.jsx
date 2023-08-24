@@ -8,7 +8,7 @@ const Card = ({cart, emptyCart}) => {
       <ul>
         {cart.map((item)=> 
         (
-        <li className="mt-2 flex justify-between">
+        <li className="mt-2 flex justify-between" key={item.id}>
           <span>{item.name}</span>
           <span>{item.price}&euro;</span>
         </li>
